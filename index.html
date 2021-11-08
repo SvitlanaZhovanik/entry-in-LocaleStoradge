@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form</title>
+</head>
+<body>
+  
+
+    <form class="js-feedback-form">
+        <!-- <label for="qwe">User name</label>
+        <input name="name" type="text" id="qwe"/> -->
+
+        <label>
+            User name
+            <input class="js-feedback-username" name="username" type="text" placeholder="your name"/>
+        </label>
+
+        <label>
+            Email
+            <input class="js-feedback-email" name="email" type="email" placeholder="email"/>
+        </label>
+
+        <label>
+            Password
+            <input class="js-feedback-password" name="password" type="password" placeholder="your password"/>
+        </label>
+        <label>
+            Comment
+            <textarea class="js-feedback-message" name="message" cols="30" rows="15" placeholder="write comment"></textarea>
+        </label>
+        <button class="js-feedback-btn" type="submit">Send</button>
+    </form>
+
+    <script src="./formLocalStoradge.js" type="module"></script>
+</body>
+</html>
