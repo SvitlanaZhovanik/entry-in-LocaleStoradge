@@ -37,8 +37,6 @@ export default class MylocalStorageSave {
     this.loadListeners();
     this.nodeList = this.formRefs.querySelectorAll('input, textarea');
 
-    for (let list of this.nodeList) {
-      this.getFromLocalStorage(list.name);
-    }
+    this.nodeList.forEach( el => this.getFromLocalStorage(el.name))
   };
 }
